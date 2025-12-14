@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+      <title>My Personal Website</title>
+      <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+<body>
+
+      <h1>Hello, I am elnaz khash</h1>
+      <p>Welcome to my personal website</p>
+
+      <h2>My Introduction Video</h2>
+      <video controls width="600">
+    <source src="{{ url_for('static', filename='video/intro.mp4') }}" type="video/mp4">
+
+</video>
+
+
+      <iframe src="https://drive.google.com/file/d/1vDcIfzm3ZcodT2PbGoA3zuxTU1C21uMN/preview" width="640" height="360"
+            allow="autoplay; fullscreen" allowfullscreen>
+      </iframe>
+
+      <h2>Send Me a Message</h2>
+
+      <form method="POST">
+            <input type="text" name="name" placeholder="Your Name" required><br><br>
+            <textarea name="message" placeholder="Your Message" required></textarea><br><br>
+            <button type="submit">Send</button>
+      </form>
+
+      <h2>Contact</h2>
+      <p>Phone: +XX XXX XXX XXX</p>
+
+      <h2>Social Media</h2>
+      <ul>
+            <li><a href="https://wa.me/+989121382709">WhatsApp</a></li>
+            <li><a href="https://instagram.com/elnaz.khash">Instagram</a></li>
+            <li><a href="https://linkedin.com/in/elnaz khash">LinkedIn</a></li>
+      </ul>
+
+</body>
+
+</html>
